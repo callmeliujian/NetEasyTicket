@@ -1,0 +1,27 @@
+//
+//  彩票.pch
+//  彩票
+//
+//  Created by 😄 on 16/8/19.
+//  Copyright © 2016年 😄. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#import "UIImage+Image.h"
+
+#import "UIView+Frame.h"
+
+#define LJKeyWindow [UIApplication sharedApplication].keyWindow
+
+#define LJScreenBounds [UIScreen mainScreen].bounds
+
+#define LJScreenW LJScreenBounds.size.width
+
+#define LJScreenH LJScreenBounds.size.height
+
+#define LJColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+
+#define LJVersionKey @"version"
+
+#endif
