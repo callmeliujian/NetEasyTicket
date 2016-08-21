@@ -12,6 +12,8 @@
 
 #import "UIView+Frame.h"
 
+#import "NSObject+Model.h"
+
 #define LJKeyWindow [UIApplication sharedApplication].keyWindow
 
 #define LJScreenBounds [UIScreen mainScreen].bounds

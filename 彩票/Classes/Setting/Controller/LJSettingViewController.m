@@ -15,6 +15,7 @@
 #import "LJBlurView.h"
 #import <MBProgressHUD.h>
 #import "LJPushViewController.h"
+#import "LJHelpViewController.h"
 
 @interface LJSettingViewController ()
 
@@ -43,6 +44,8 @@
     
     self.title = @"设置";
     
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"常见问题" style:UIBarButtonItemStyleBordered target:self action:@selector(help)];
+    
     //第一组
     [self setUpGroup0];
     
@@ -51,6 +54,13 @@
     
     //第二组
     [self setUpGroup2];
+}
+
+- (void)help
+{
+    LJHelpViewController *helpVc = [[LJHelpViewController alloc] init];
+    helpVc.title = @"帮助";
+    [self.navigationController pushViewController:helpVc animated:YES];
 }
 
 - (void)setUpGroup0
